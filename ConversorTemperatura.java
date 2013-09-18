@@ -20,7 +20,7 @@ public class ConversorTemperatura {
 		return (valorFahrenheit-32)/1.8 ;
 	}
 	
-	double fahrenheitParaKelvin(double fahrenheit){
+	double fahrenheitParaKelvin(double valorFahrenheit){
 		return ((valorFahrenheit-32)/1.8)+273.15;
 	}
 	
