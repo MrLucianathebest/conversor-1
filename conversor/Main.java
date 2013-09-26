@@ -32,31 +32,37 @@ public class Main {
 		//Criando o conversor
 		ConversorTemperatura meuConversor = new ConversorTemperatura();
 		
+		//Criando variável para o resultado
 		double resultadoConversao = 0;
 		
+		//Executando métodos de acordo com a opção digitada pelo usuário
 		if (opcaoLida == 1){
-			meuConversor.celsiusParaFahrenheit(valorDigitado);
-		}
-		if else (opcaoLida == 2){
-			meuConversor.fahrenheitParaCelsius(valorDigitado)
-		}
-		if else(opcaoLida == 3){
-			meuConversor.celsiusParaKelvin(valorDigitado)
-		}
-		if else(opcaoLida == 4){
-			meuConversor.kelvinParaCelsius(valorDigitado);
-		}
-		if else(opcaoLida == 5){
-			meuConversor.fahrenheitParaKelvin(valorDigitado);
-		}
-		if else(opcaoLida == 6){
-			meuConversor.kelvinParaFahrenheit(valorDigitado);
-		}
+			resultadoConversao = meuConversor.celsiusParaFahrenheit(valorDigitado);
+			System.out.println(valorDigitado + " graus celsius convertido é igual a " + resultadoConversao + " graus fahrenheit.");
 		
-		
-		
-		
-		
+		}else if(opcaoLida == 2){
+			resultadoConversao = meuConversor.fahrenheitParaCelsius(valorDigitado);
+			System.out.println(valorDigitado + " graus fahrenheit convertido é igual a " + resultadoConversao + " graus celsius.");
+			
+		}else if(opcaoLida == 3){
+			resultadoConversao = meuConversor.celsiusParaKelvin(valorDigitado);
+			System.out.println(valorDigitado + " graus celsius convertido é igual a " + resultadoConversao + " graus kelvin.");
+			
+		}else if(opcaoLida == 4){
+			resultadoConversao = meuConversor.kelvinParaCelsius(valorDigitado);
+			System.out.println(valorDigitado + " graus kelvin convertido é igual a " + resultadoConversao + " graus celsius.");
+			
+		}else if(opcaoLida == 5){
+			resultadoConversao = meuConversor.fahrenheitParaKelvin(valorDigitado);
+			System.out.println(valorDigitado + " graus fahrenheit convertido é igual a " + resultadoConversao + " graus kelvin.");
+			
+		}else if(opcaoLida == 6){
+			resultadoConversao = meuConversor.kelvinParaFahrenheit(valorDigitado);
+			System.out.println(valorDigitado + " graus kelvin convertido é igual a " + resultadoConversao + " graus fahrenheit.");
+			
+		}else{
+			System.out.println("Opção inválida");
+		}
 		
 	}
 }
